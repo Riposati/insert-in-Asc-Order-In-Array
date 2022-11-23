@@ -19,11 +19,11 @@ class Solution {
     }
 
     public int findKthLargest(int[] v, int kthV) {
-        int n = 1;
+//        int n = 1;
 
-        for (int i = 1; i < v.length; i++) {
-            n = this.insertSorted(v, n, v[i], v.length);
-        }
+//        for (int i = 1; i < v.length; i++) {
+//            n = this.insertSorted(v, n, v[i], v.length);
+//        }
 
         if(kthV > v.length || kthV <= 0)
             return v[v.length-1]; // return biggest in array
